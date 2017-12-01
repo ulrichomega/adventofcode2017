@@ -6,13 +6,11 @@ def main():
     print(contents)
     total=0
 
-    for x in range(-1,len(contents)-2):
+    for x in range(0, len(contents)):
         first = contents[x]
-        second = contents[x+1]
-        #print ("comparing {first} and {second}".format(first=first,second=second))
+        second = contents[int(x-len(contents)/2)]
         if first == second:
             total = total + int(first)
-            #print ("match: Total is: {total}".format(total=total))
 
     print(total)
 
