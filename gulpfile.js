@@ -12,7 +12,6 @@ gulp.task("tslint", function() {
 });
 
 gulp.task("build", ["tslint"], function() {
-    //what is this doing?
     return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest("dist"));
 });
 
