@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "listEmittedFiles": true,
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "outDir": "dist",
+        "pretty": true,
+        "target": "es5"
+    },
+    "include": [
+        "*.ts"
+    ],
+    "exclude": [
+        "node_modules/**/*"
+    ],
+    "compileOnSave": true
+}
