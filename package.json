@@ -1,0 +1,21 @@
+{
+  "name": "adventofcode2017",
+  "version": "1.0.0",
+  "description": "ulrichomega's advent of code work for 2017",
+  "dependencies": {
+    "npm": "^5.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulrichomega/adventofcode2017.git"
+  },
+  "author": "ulrichomega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ulrichomega/adventofcode2017/issues"
+  },
+  "homepage": "https://github.com/ulrichomega/adventofcode2017#readme"
+}
