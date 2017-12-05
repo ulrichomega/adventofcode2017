@@ -1,7 +1,7 @@
 import fs = require("fs");
 import _ = require("lodash");
 
-const fileContents: string = fs.readFileSync("./input_4_1.txt", {encoding: "utf8"}).trim();
+const fileContents: string = fs.readFileSync("inputs/4_1", {encoding: "utf8"}).trim();
 
 const words: string[][] = _.map(_.split(fileContents, "\n"), (input: string) => {
     return _.split(input, " ");

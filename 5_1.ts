@@ -1,7 +1,7 @@
 import fs = require("fs");
 import _ = require("lodash");
 
-const fileContents: string = fs.readFileSync("./input_5_1.txt", {encoding: "utf8"}).trim();
+const fileContents: string = fs.readFileSync("inputs/5_1", {encoding: "utf8"}).trim();
 
 const instructionStrings: string[] = _.split(fileContents, "\n");
 const instructions: number[] = _.map(instructionStrings, _.toInteger);
