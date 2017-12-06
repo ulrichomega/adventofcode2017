@@ -7,6 +7,13 @@
             "type": "gulp",
             "task": "build",
             "problemMatcher": []
+        },
+        {
+            "type": "gulp",
+            "task": "default",
+            "problemMatcher": [
+                "$tslint5"
+            ]
         }
     ]
 }
