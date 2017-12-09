@@ -11,7 +11,7 @@ var changedInPlace = require("gulp-changed-in-place");
 var output = "dist";
 
 function changedSrc(tsProject) {
-    return tsProject.src().pipe(changedInPlace());
+    return tsProject.src().pipe(changedInPlace({firstPass: true, howToDetermineDifference: "modification-time"}));
 }
 
 gulp.task("tslintChanged", function() {
