@@ -10,7 +10,18 @@
         },
         {
             "type": "gulp",
-            "task": "default",
+            "task": "buildChanged",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$tslint5"
+            ]
+        },
+        {
+            "type": "gulp",
+            "task": "build",
             "group": {
                 "kind": "build",
                 "isDefault": true

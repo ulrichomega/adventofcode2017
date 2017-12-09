@@ -14,16 +14,24 @@ function changedSrc(tsProject) {
     return tsProject.src().pipe(changedInPlace());
 }
 
-gulp.task("tslint", function() {
+gulp.task("tslintChanged", function() {
     return changedSrc(tsProject).pipe(tslint()).pipe(tslint.report());
 });
 
-gulp.task("build", ["tslint"], function() {
+gulp.task("tslint", function() {
+    return tsProject.src().pipe(tslint()).pipe(tslint.report());
+});
+
+gulp.task("buildChanged", ["tslintChanged"], function() {
     return changedSrc(tsProject).pipe(tsProject()).js.pipe(gulp.dest(output));
 });
 
+gulp.task("build", ["tslint"], function() {
+    return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest(output));
+});
+
 gulp.task("watch", function() {
-    gulp.watch("*.ts",["default"]);
+    gulp.watch("*.ts",["buildChanged"]);
 });
 
 gulp.task("default", ["tslint", "build"], function() {
