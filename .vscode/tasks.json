@@ -23,8 +23,7 @@
             "type": "gulp",
             "task": "build",
             "group": {
-                "kind": "build",
-                "isDefault": true
+                "kind": "build"
             },
             "problemMatcher": [
                 "$tslint5"
