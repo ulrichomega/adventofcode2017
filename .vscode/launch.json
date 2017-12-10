@@ -8,11 +8,12 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/dist/3_2.js",
-            "preLaunchTask": "tsc: build - tsconfig.json",
+            "program": "${workspaceFolder}/dist/9_2.js",
+            "preLaunchTask": "gulp: buildDebug",
             "outFiles": [
                 "${workspaceFolder}/dist/**/*.js"
-            ]
+            ],
+            "sourceMaps": true
         }
     ]
 }

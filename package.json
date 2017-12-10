@@ -10,6 +10,7 @@
     "@types/node": "^8.0.53",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.1",
     "gulp-tslint": "^8.1.2",
     "gulp-typescript": "^3.2.3",
     "lodash": "^4.17.4",

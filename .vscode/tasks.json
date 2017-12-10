@@ -20,6 +20,14 @@
             ]
         },
         {
+            "type": "gulp",
+            "task": "buildDebug",
+            "group": "build",
+            "problemMatcher": [
+                "$tslint5"
+            ]
+        },
+        {
             "type": "typescript",
             "tsconfig": "tsconfig.json",
             "problemMatcher": [

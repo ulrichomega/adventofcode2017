@@ -9,6 +9,7 @@
         "noImplicitThis": true,
         "outDir": "dist",
         "pretty": true,
+        "removeComments": true,
         "target": "es5"
     },
     "include": [
