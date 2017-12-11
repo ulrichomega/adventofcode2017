@@ -6,17 +6,10 @@
         {
             "type": "gulp",
             "task": "build",
-            "problemMatcher": []
-        },
-        {
-            "type": "gulp",
-            "task": "build",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [
-                "$tslint5"
+                "$tslint5",
+                "$tsc"
             ]
         },
         {
@@ -24,7 +17,8 @@
             "task": "buildDebug",
             "group": "build",
             "problemMatcher": [
-                "$tslint5"
+                "$tslint5",
+                "$tsc"
             ]
         },
         {
@@ -33,6 +27,17 @@
             "problemMatcher": [
                 "$tsc"
             ]
+        },
+        {
+            "type": "gulp",
+            "task": "watch",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$tslint5",
+                "$tsc"]
         }
     ]
 }
