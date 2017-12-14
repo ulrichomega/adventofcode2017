@@ -21,18 +21,18 @@ const nodes: number[][] = _.map(nodeIdentifiers, (nodeLine: string): number[] =>
     return _.map(_.slice(lineContents, 2), _.parseInt);
 });
 
-let nodesExplored: number[] = [];
+const nodesNotExplored: number[] = _.range(0, nodes.length);
 
 // Iteratively explore a group and then pop all of them from the list
 let numberOfGroups: number = 0;
-while (nodes.length !== 0) {
-    const nodeToExplore: number = _.findIndex(nodes, );
+while (nodesNotExplored.length > 0) {
+    const nodeToExplore: number = _.min(nodesNotExplored);
 
-    const nodesInGroup: number[] = exploreNode(nodes, 0, []);
+    const nodesInGroup: number[] = exploreNode(nodes, nodeToExplore, []);
 
     // Our solution to part one makes this part kind of harder
     // So unless we refactor we're stuck with a dumb list of numbers instead of smarter classes
-    nodesExplored = _.concat(nodesExplored, nodesInGroup);
+    _.pullAll(nodesNotExplored, nodesInGroup);
 
     numberOfGroups++;
 }

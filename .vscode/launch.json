@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/dist/12_1.js",
+            "program": "${workspaceFolder}/dist/12_2.js",
             "preLaunchTask": "gulp: buildDebug",
             "outFiles": [
                 "${workspaceFolder}/dist/**/*.js"
