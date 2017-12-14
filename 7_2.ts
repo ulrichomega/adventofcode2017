@@ -1,5 +1,5 @@
-import fs = require("fs");
-import _ = require("lodash");
+import * as fs from "fs";
+import * as _ from "lodash";
 
 class Program {
     public id: string;

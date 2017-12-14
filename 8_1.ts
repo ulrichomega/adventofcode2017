@@ -1,5 +1,5 @@
-import fs = require("fs");
-import _ = require("lodash");
+import * as fs from "fs";
+import * as _ from "lodash";
 
 function evalIf(register: string, operator: string, value: number, registers: { [key: string]: number}): boolean {
     let registerValue = registers[register];

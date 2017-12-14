@@ -1,4 +1,4 @@
-import _ = require("lodash");
+import * as _ from "lodash";
 
 // Returns the index of the associated corner in the ring one in from the given one
 function findInnerRingCorner(ringCounter: number, cornerIndex: number): number {

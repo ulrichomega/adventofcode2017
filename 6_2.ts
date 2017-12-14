@@ -1,5 +1,5 @@
-import fs = require("fs");
-import _ = require("lodash");
+import * as fs from "fs";
+import * as _ from "lodash";
 
 function bucketIndexInSeenCombinations(currentBucket: number[], combinations: number[][]): number {
     // The bucket will always exist in the combinations, but if it is at the end, then it was just added and is ignored

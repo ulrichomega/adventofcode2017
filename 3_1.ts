@@ -1,4 +1,4 @@
-import _ = require("lodash");
+import * as _ from "lodash";
 
 const inputValue: number = _.parseInt(process.argv[2]);
 

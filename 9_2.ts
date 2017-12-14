@@ -1,5 +1,5 @@
-import fs = require("fs");
-import _ = require("lodash");
+import * as fs from "fs";
+import * as _ from "lodash";
 
 // Returns the point value of the group (sum of all children)
 function parseGroup(group: string): number {

@@ -1,5 +1,5 @@
-import fs = require("fs");
-import _ = require("lodash");
+import * as fs from "fs";
+import * as _ from "lodash";
 
 const fileContents: string = fs.readFileSync("inputs/11_1", {encoding: "utf8"}).trim();
 
